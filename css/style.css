@@ -259,3 +259,30 @@ textarea {
   justify-content: center;
 }
 
+.logo {
+  height: 60px;
+}
+.page-footer {
+  max-width: 400px;
+  background: #fff !important;
+}
+.page-footer img {
+  height: 40px;
+}
+.footer-copyright {
+  text-align: center;
+  color: #121212 !important;
+}
+
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
