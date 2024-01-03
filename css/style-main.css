@@ -1,0 +1,71 @@
+.card:not(.bank) {
+  max-width: 400px;
+  height: 240px;
+}
+.card-title {
+  background: rgba(0,0,0,.3);
+}
+
+.card p{
+  color: #121212;
+  padding-left: 8px;
+}
+
+.logo {
+  height: 60px;
+}
+
+
+.card .card-image:not(.bank) img {
+  width: 170px !important;
+  height: 170px !important;
+  object-fit: cover;
+}
+
+.row .col.s6:not(.bank) {
+  height: 250px;
+}
+.page-footer {
+  max-width: 400px;
+  background: #fff !important;
+}
+.page-footer img {
+  height: 40px;
+}
+.footer-copyright {
+  text-align: center;
+  color: #121212 !important;
+}
+.page-footer img {
+  height: 40px;
+}
+img.copy {
+  width: 16px !important;
+}
+.btn-floating {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  bottom: 50px !important;
+
+}
+
+.card .card-image {
+  overflow: hidden;
+}
+.btn-floating.halfway-fab {
+  position: fixed !important;
+}
+
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
