@@ -49,14 +49,14 @@
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#about-sec">About</a>
+                  <a class="nav-link" onclick="goToAbout();">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfsl6PW1S3CUUAMPZGY4oQBVZcJjkNNDJZ-s3_PKIxlGrfHrg/viewform">
                     Register</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#upcoming-event">Upcoming events</a>
+                  <a class="nav-link" onclick="goToEvent()">Upcoming events</a>
                 </li>
               </ul>
             </div>
@@ -90,7 +90,7 @@
   <section class="feature_section">
     <div class="container">
       <div class="feature_container">
-        <div class="box">
+        <div class="box" onclick="goToAbout()">
           <div class="img-box">
             <img class="logo-img" src="images/group.png" alt="">
           </div>
@@ -98,7 +98,7 @@
             About us
           </h5>
         </div>
-        <div class="box">
+        <div class="box" onclick="register()">
           <div class="img-box">
             <img class="logo-img" src="images/edit.png" alt="">
           </div>
@@ -106,7 +106,7 @@
             Register
           </h5>
         </div>
-        <div class="box">
+        <div class="box" onclick="goToEvent()">
           <div class="img-box">
             <img class="logo-img" src="images/event.png" alt="">
                  </div>
@@ -122,7 +122,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding-bottom" id="about-sec">
+  <section class="about_section layout_padding-bottom" id="about-sec" >
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-md-6">
@@ -133,7 +133,7 @@
             <p>
               Dive into a transformative journey of knowledge and spirituality with ISM Inspire! Launched in 2018, this specially crafted series of interactive Islamic sessions is dedicated to cultivating a scholarly audience among Malayali professionals, both within and beyond the borders of Kerala. Our primary mission? To elevate religious awareness and upskill the spiritual journey of professionals like you.
             </p>
-            <a href="">
+            <a href="about.html">
               Read More
             </a>
           </div>
@@ -190,22 +190,6 @@
         <div class="col-sm-6 col-md-4 mx-auto">
           <div class="box ">
             <div class="img-box">
-              <img src="images/progress.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <h5>
-                IT Professional Gathering
-              </h5>
-              <p>
-                Connecting tech enthusiasts, fostering knowledge exchange, and exploring industry trends at an IT Professional Gathering
-                <br />&nbsp;
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mx-auto">
-          <div class="box ">
-            <div class="img-box">
               <img src="images/discussion.png" alt="" />
             </div>
             <div class="detail-box">
@@ -229,6 +213,22 @@
               </h5>
               <p>
                 Join us for a Professional Family Meetup, fostering connections, knowledge sharing, and support among career-driven individuals in a familial atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/progress.png" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+                IT Professional Gathering
+              </h5>
+              <p>
+                Connecting tech enthusiasts, fostering knowledge exchange, and exploring industry trends at an IT Professional Gathering
+                <br />&nbsp;
               </p>
             </div>
           </div>
@@ -375,9 +375,7 @@
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Video description
-        </h2>
+        <h2>What's Inspire?</h2>
       </div>
       <div class="row">
         <div class="col-md-12" class="video-container">
@@ -429,13 +427,13 @@
                 </a>
               </div>
               <div class="col-md-4">
-                <a href="mailto:contact@isminspire.com">
+                <a href="mailto:inspire.kakkanad@gmail.com">
                   <div class="item ">
                     <div class="img-box">
                       <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                     <p>
-                      contact@isminspire.com
+                      inspire.kakkanad@gmail.com
                     </p>
                   </div>
                 </a>
@@ -472,10 +470,11 @@
     <div class="container">
       <p>
         &copy; <span id="displayDateYear"></span> All Rights Reserved By
-        <a href="">Team Inspire <i>(IT Professional wing of ISM)</i></a>
+        <a href="">ISM Team Inspire <i><br />( Professional wing of ISM)</i></a>
       </p>
     </div>
   </footer>
+
   <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
