@@ -18,7 +18,9 @@ Centre, Thenjipalam Near Calicut University" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+
+<style>
     .collapse:not(.show) {
       display: block !important;
     }
@@ -78,6 +80,26 @@ Centre, Thenjipalam Near Calicut University" />
       justify-content: space-between;
       padding: 0 16px;
     }
+    .share-round {
+      position: fixed;
+      bottom: 8px;
+      z-index: 2;
+      cursor: pointer;
+      right: 20px;
+      left: 20px;
+    }
+    .share-round .btn-danger {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .share-round {
+      bottom: 40px;
+    }
+    .toast-body {
+      background: lightblue;
+    }
+
   </style>
   <div class="header">
     <div class="logo-wrap">
@@ -93,8 +115,7 @@ Centre, Thenjipalam Near Calicut University" />
   <section class="why_section" id="program-profexel">
     <div class="container">
       <div class="why_container">
-            <img src="images/pn1.jpg" alt="">
-            <img src="images/pn2.jpg" alt="">
+
         <img src="images/pn3.jpg" alt="">
         <img src="images/pn4.jpg" alt="">
         <img src="images/pn5.jpg" alt="">
@@ -102,13 +123,24 @@ Centre, Thenjipalam Near Calicut University" />
         <img src="images/pn7.jpg" alt="">
         <img src="images/pn8.jpg" alt="">
         <img src="images/pn9.jpg" alt="">
+        <div class="share-round btn-wrap">
+          <button type="button" class="btn btn-danger" id="myBtn"> <i class="fa fa-share-alt" aria-hidden="true"></i> Share</button>
+        </div>
 
+        <div class="share-round">
+          <div class="toast">
+            <div class="toast-body">
+              Copied to clipboard
+            </div>
+          </div>
+        </div>
 
       </div>
 
 
     </div>
   </section>
+
 
 
 
@@ -133,8 +165,21 @@ Centre, Thenjipalam Near Calicut University" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#myBtn").click(function(){
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(window.location.href).then(function() {
+            $('.toast').toast('show');
+          }, function(err) {
+            console.error('Async: Could not copy text: ', err);
+          });
+        }
+
+      });
+    });
   </script>
   <!-- End Google Map -->
 
