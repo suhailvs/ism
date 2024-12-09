@@ -1,3 +1,9 @@
 .logo-bustan {
   height: 40px;
 }
+.max-100 {
+  max-width: 100%;
+}
+.max-200 {
+  max-width: 200px;
+}
