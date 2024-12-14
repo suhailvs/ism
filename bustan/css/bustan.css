@@ -1,4 +1,4 @@
-.logo-bustan {
+.logo-Busthan {
   height: 40px;
 }
 .max-100 {
@@ -6,4 +6,44 @@
 }
 .max-200 {
   max-width: 200px;
+}
+.dropdown-menu {
+  background: transparent;
+}
+
+.main-menu ul li a {
+  color: #fff;
+}
+.main-menu ul li.open {
+  position: relative;
+}
+.main-menu ul li.open .second-level {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  background: rgba(0,0,0,.8);
+}
+.main-menu ul li.open .second-level a:hover {
+  background: transparent !important;
+
+}
+
+.pricing-price {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .push-40 {
+    margin-top: 40px;
+  }
+  .dropdown-menu {
+    background: #111;
+  }
+  .second-level {
+    top: 0 !important;
+    padding-left: 16px !important;
+    padding-top: 40px !important;
+  }
 }
